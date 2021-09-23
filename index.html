@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Slot Machine Game</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <h1>Slot machine game</h1>
+    <div class = "container">
+        <div class = "symbol" id = "1"> </div>
+        <div class = "symbol" id = "2"> </div>
+        <div class = "symbol" id = "3"> </div>
+    </div>
+    <p id = "win">You've won the bet!</p>
+    <p id = "crt-msg">Enter an amount:</p>
+    <p id = "error"></p>
+    <div class = "btn-container" id = "Btn-container">
+        <input type="text" class = "inpt" id = "input">
+        <button type="submit" class = "bet-btn" onclick = "container_function()" id = "play-btn"> Play</button>
+        
+    </div>
+    <div id = "restartBtnContainer">
+        <button type = "button" id = "restart-btn" onclick= "window.location.reload()">Restart</button>
+    </div>
+    <div class = "money" id = "amount">You have: 100$</div>
+    <script src = "script.js"> </script>
+</body>

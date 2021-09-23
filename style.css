@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+}
+
+.btn-container, .money {
+    display: flex;
+    justify-content: center;
+}
+
+.bet-btn {
+    margin-left :1rem;
+    font-size: larger;
+    color: #008000;
+    width: 4rem;
+}
+
+.inpt{
+    width: 3rem;
+}
+
+.symbol {
+    background-color: blueviolet;
+    width: 10vh;
+    height: 10vh;
+    margin: 1rem;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.money {
+    margin-top: 1rem;
+}
+
+#error {
+    display: none;
+}
+
+#error2 {
+    display: none;
+}
+
+.money {
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #800000;
+}
+
+#crt-msg {
+    color: #4C7F1A;
+}
+
+#win {
+    color: orangered;
+}
+
+#game-over {
+    font-size:xx-large;
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.spin {
+    animation-name: spinner, change-color;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes spinner {
+    from {
+      -moz-transform: rotateX(0deg);
+      -ms-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+    }
+    to {
+      -moz-transform: rotateX(-360deg);
+      -ms-transform: rotateX(-360deg);
+      transform: rotateX(-360deg);
+    }
+}
+
+@keyframes change-color {
+    0% { background-color: blueviolet; }
+    60% { background-color: #83e22b; }
+    100% { background-color: blueviolet; }
+}
+
+#restartBtnContainer {
+    justify-content: center;
+}
+
+#restart-btn {
+    font-size: larger;
+    color: #008000;
+}
+
+#restart-btn:hover {
+    cursor:pointer;
+    transition: 0.7s;
+    transform: scale(1.5, 1.5);
+    color: #b10202;
+    border-width: 2px;
+    border-color: green;
+}
